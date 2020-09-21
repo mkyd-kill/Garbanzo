@@ -1,0 +1,130 @@
+/* Master styles */
+body {
+    font-family: 'Lato', sans-serif, monospace;
+    margin: 0%;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+/* Nav bar styles */
+#nav-bar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: lightslategray;
+    color: darkslategrey;
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+
+.left-side {
+    display: flex;
+}
+
+#nav-bar > .left-side > div {
+    margin-right: 20px;
+    font-size: .9em;
+    text-transform: uppercase;
+}
+
+.nav-link-wrapper {
+    height: 22%;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom .5s;
+}
+
+.nav-link-wrapper a {
+    color: darkslategrey;
+    text-decoration: none;
+    transition: color .5s;
+    font-weight: bold;
+}
+
+.nav-link-wrapper:hover {
+    border-top: 2px solid darkgreen;
+}
+
+.nav-link-wrapper a:hover {
+    color: black;
+}
+
+.active-nav-link {
+    border-top: 2px solid black;
+}
+
+.active-nav-link a {
+    color: black !important;
+}
+
+/* Web styles */
+.items-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.item-wrapper {
+    position: relative;
+    border-style: groove;
+}
+
+.img-background {
+    height: 350px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.img-text-wrapper {
+    position: absolute;
+    top: 0%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    padding: 0 100px 0 100px;
+}
+
+.logo-wrapper img {
+    width: 50%;
+    margin-bottom: 20px;
+}
+
+/* Need to be more specific with selector */
+.img-text-wrapper .subtitle {
+    transition: 2s;
+    font-weight: 600;
+    color: transparent;
+}
+.img-text-wrapper:hover .subtitle {
+    font-weight: 600;
+    color: lightseagreen;
+}
+
+.img-darken {
+    transition: 2s;
+    filter: brightness(10%);
+}
+
+/* About page */
+.two-column-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.profile-img-wrapper img {
+    width: 100%;
+}
+
+.profile-content-wrapper {
+    padding: 30px;
+}
+
+.profile-content-wrapper h1 {
+    color: darkslategrey;
+}
