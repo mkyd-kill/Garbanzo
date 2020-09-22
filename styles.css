@@ -1,7 +1,8 @@
 /* Master styles */
 body {
-    font-family: 'Lato', sans-serif, monospace;
+    font-family: monospace, 'Times New Roman', Times, serif;
     margin: 0%;
+    background-color: darkslategrey;
 }
 
 .container {
@@ -59,15 +60,22 @@ body {
     color: black !important;
 }
 
+.brand {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: medium;
+    font-weight: bold;
+    color: darkblue;
+}
+
 /* Web styles */
 .items-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: .05in;
 }
 
 .item-wrapper {
     position: relative;
-    border-style: groove;
 }
 
 .img-background {
@@ -76,6 +84,8 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    border-spacing: .5in;
+    border-radius: 15px;
 }
 
 .img-text-wrapper {
@@ -91,24 +101,72 @@ body {
 }
 
 .logo-wrapper img {
-    width: 50%;
-    margin-bottom: 20px;
+    width: 40%;
+    margin-bottom: 80px;
+    margin-left: 20px;
 }
 
 /* Need to be more specific with selector */
+.img-text-wrapper:hover .subtitle {
+    font-weight: 650;
+    font-size: medium;
+    font-family: monospace, 'Times New Roman', Times, serif;
+    color: aqua;
+    bottom: 0%;
+}
+
 .img-text-wrapper .subtitle {
     transition: 2s;
-    font-weight: 600;
+    font-weight: 650;
     color: transparent;
+    bottom: 0%;
+    text-decoration: none;
 }
-.img-text-wrapper:hover .subtitle {
-    font-weight: 600;
-    color: lightseagreen;
+
+.img-text-wrapper:hover .subtitle .fallout{
+    font-weight: 650;
+    font-size: medium;
+    font-family: monospace, 'Times New Roman', Times, serif;
+    color: white;
+    bottom: 0%;
+    border-style: ridge;
+}
+
+.img-text-wrapper .subtitle .fallout{
+    transition: 1s;
+    font-weight: 650;
+    color: transparent;
+    bottom: 0%;
+    text-decoration: none;
+    filter: brightness(100%);
+    border-radius: .5in;
+}
+
+.fallout {
+    color: transparent;
+    background-color: transparent;
+    border: none;
+}
+
+.fallout:hover {
+    transition: 1s;
+    color: red !important;
+    background-color: black;
+    bottom: 0%;
+    border-color: whitesmoke;
+}
+
+.img-text-wrapper .subtitle .fallout {
+    transition: 1s;
+    font-weight: 650;
+    bottom: 0%;
+    text-decoration: none;
+    filter: brightness(100%);
 }
 
 .img-darken {
     transition: 2s;
-    filter: brightness(10%);
+    filter: brightness(15%);
 }
 
 /* About page */
@@ -126,5 +184,69 @@ body {
 }
 
 .profile-content-wrapper h1 {
-    color: darkslategrey;
+    color: lightseagreen;
 }
+
+/* For mobile phones and screen transitions */
+@media only screen and (max-width: 815px) {
+    /* For mobile phones: */
+    body {
+        height: auto;
+        width: auto;
+    }
+    .container{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .items-wrapper {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .img-background {
+        height: 300px;
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    
+    .img-text-wrapper {
+        position: absolute;
+        top: 0%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 200%;
+        text-align: center;
+        padding: 0 100px 0 100px;
+    }
+    
+    .logo-wrapper img {
+        width: 40%;
+        margin-bottom: 80px;
+        margin-left: 20px;
+    }
+    
+    /* Need to be more specific with selector */
+    .img-text-wrapper:hover .subtitle {
+        font-weight: 650;
+        font-size: medium;
+        font-family: monospace, 'Times New Roman', Times, serif;
+        color: aqua;
+        bottom: 0%;
+    }
+    
+    .img-text-wrapper .subtitle {
+        transition: 2s;
+        font-weight: 650;
+        color: transparent;
+        bottom: 0%;
+        text-decoration: none;
+    }
+  }
+
+  @media only screen and (max-width: 400px) {
+  }

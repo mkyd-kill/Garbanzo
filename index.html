@@ -41,12 +41,15 @@
           <!-- div to manage the logos -->
           <div class="img-text-wrapper">
             <div class="logo-wrapper">
-              <img src="" alt="">
+              <img src="">
             </div>
 
             <!-- logo subtiltes -->
             <div class="subtitle">
-
+              <p>UI/UX Designs with compatible Graphic Designs all in one</p>
+              <a href="https://dribbble.com/roml3n" target="_blank" rel="noopener noreferrer">
+                <button class="fallout">follow</button>
+              </a>
             </div>
           </div>
 
@@ -60,12 +63,15 @@
           <!-- div to manage the logos -->
           <div class="img-text-wrapper">
             <div class="logo-wrapper">
-              <img src="" alt="">
+              <img src="images/logos/logo2.png">
             </div>
 
             <!-- logo subtiltes -->
             <div class="subtitle">
-
+              <p>Front-end Web Development with HTML, CSS and more</p>
+              <a href="" target="_blank" rel="noopener noreferrer">
+                <button class="fallout">follow</button>
+              </a>
             </div>
           </div>
 
@@ -84,7 +90,10 @@
 
             <!-- logo subtiltes -->
             <div class="subtitle">
-
+              <p>Listen to Kenya's upcoming female Gospel Artist</p>
+              <a href="https://www.youtube.com/channel/UCukI2b6DriXJr5_qsQLAR1g/featured" target="_blank" rel="noopener noreferrer">
+                <button class="fallout">follow</button>
+              </a>
             </div>
           </div>
 
@@ -98,12 +107,15 @@
           <!-- div to manage the logos -->
           <div class="img-text-wrapper">
             <div class="logo-wrapper">
-              <img src="" alt="">
+              <img src="">
             </div>
 
             <!-- logo subtiltes -->
             <div class="subtitle">
-
+              <p>Zebehtech Lens Factory</p>
+              <a href="https://zebehtech.herokuapp.com/" target="_blank" rel="noopener noreferrer">
+                <button class="fallout">follow</button>
+              </a>
             </div>
           </div>
 
@@ -112,17 +124,20 @@
         <!-- image 5 -->
         <div class="item-wrapper">
           <div class="img-background" style="background-image: url(images/portfolio5.jpg)">
-
+            
           </div>
           <!-- div to manage the logos -->
           <div class="img-text-wrapper">
             <div class="logo-wrapper">
-              <img src="" alt="">
+              <img src="images/logos/logo5.png">
             </div>
 
             <!-- logo subtiltes -->
             <div class="subtitle">
-
+              <p>Join the travel</p>
+              <a href="https://metickets.krc.co.ke/" target="_blank" rel="noopener noreferrer">
+                <button class="fallout">follow</button>
+              </a>
             </div>
           </div>
 
@@ -136,12 +151,14 @@
           <!-- div to manage the logos -->
           <div class="img-text-wrapper">
             <div class="logo-wrapper">
-              <img src="" alt="">
+              <img src="">
             </div>
 
             <!-- logo subtiltes -->
             <div class="subtitle">
-
+              <a href="" target="_blank" rel="noopener noreferrer">
+              <button class="fallout">follow</button>
+              </a>
             </div>
           </div>
 
@@ -155,12 +172,14 @@
           <!-- div to manage the logos -->
           <div class="img-text-wrapper">
             <div class="logo-wrapper">
-              <img src="" alt="">
+              <img src="">
             </div>
 
             <!-- logo subtiltes -->
             <div class="subtitle">
-
+              <a href="" target="_blank" rel="noopener noreferrer">
+                <button class="fallout">follow</button>
+              </a>
             </div>
           </div>
 
@@ -174,12 +193,14 @@
           <!-- div to manage the logos -->
           <div class="img-text-wrapper">
             <div class="logo-wrapper">
-              <img src="" alt="">
+              <img src="">
             </div>
 
             <!-- logo subtiltes -->
             <div class="subtitle">
-
+              <a href="" target="_blank" rel="noopener noreferrer">
+                <button class="fallout">follow</button>
+              </a>
             </div>
           </div>
 
@@ -193,12 +214,15 @@
           <!-- div to manage the logos -->
           <div class="img-text-wrapper">
             <div class="logo-wrapper">
-              <img src="" alt="">
+              <img src="">
             </div>
 
             <!-- logo subtiltes -->
             <div class="subtitle">
-
+              <p>Are you an organisation in need of a Full Stack Developer?</p>
+              <a href="https://mosesnyambu.herokuapp.com/" target="_blank" rel="noopener noreferrer">
+                <button class="fallout">follow</button>
+              </a>
             </div>
           </div>
 
@@ -212,12 +236,14 @@
           <!-- div to manage the logos -->
           <div class="img-text-wrapper">
             <div class="logo-wrapper">
-              <img src="" alt="">
+              <img src="">
             </div>
 
             <!-- logo subtiltes -->
             <div class="subtitle">
-
+              <a href="" target="_blank" rel="noopener noreferrer">
+                <button class="fallout">follow</button>
+              </a>
             </div>
           </div>
 
@@ -231,12 +257,12 @@
           <!-- div to manage the logos -->
           <div class="img-text-wrapper">
             <div class="logo-wrapper">
-              <img src="" alt="">
+              <img src="">
             </div>
 
             <!-- logo subtiltes -->
             <div class="subtitle">
-
+              <button class="fallout">follow</button>
             </div>
           </div>
 
@@ -250,12 +276,11 @@
           <!-- div to manage the logos -->
           <div class="img-text-wrapper">
             <div class="logo-wrapper">
-              <img src="" alt="">
             </div>
 
             <!-- logo subtiltes -->
             <div class="subtitle">
-
+              <button class="fallout">follow</button>
             </div>
           </div>
 
@@ -266,17 +291,18 @@
 
   </div>
 </body>
+
 <script>
-  const portfolioItems = document.querySelectorAll('item-wrapper')
+  const itemNames = document.querySelectorAll('.item-wrapper')
 
   // adding an event listener
-  portfolioItems.forEach(portfolioItem => {
-    portfolioItem.addEventListener('mouseover', () => {
-      portfolioItem.childNodes[1].classList.add('img-darken');
+  itemNames.forEach(itemName => {
+    itemName.addEventListener('mouseover', () => {
+      itemName.childNodes[1].classList.add('img-darken');
     })
     
-    portfolioItem.addEventListener('mouseout', () => {
-      portfolioItem.childNodes[1].classList.remove('img-darken');
+    itemName.addEventListener('mouseout', () => {
+      itemName.childNodes[1].classList.remove('img-darken');
     })
   })
 </script>
