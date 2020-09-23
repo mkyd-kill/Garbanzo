@@ -5,9 +5,18 @@
   <meta http-equiv="X-UA-Compatible" content="IE-Edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
   <meta name="description" content="">
+  <meta name="docsearch:language" content="en">
+  <meta http-equiv="x-dns-prefetch-control" content="on">
+  <meta name="theme-color" content="#000000">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
   <link rel="stylesheet" type="text/css" media="screen" href="styles.css">
   <title>Garbanzo</title>
+
+  <!-- Garbazo Favicons -->
+  <link rel="shortcut icon" href="">
+  <link rel="apple-touch-icon" href="" sizes="180x180">
+  <link rel="icon" href="" sizes="32x32" type="image/png">
+  <link rel="icon" href="" sizes="16x16" type="image/png">
 </head>
 <body>
   <div class="container">
@@ -63,14 +72,14 @@
           <!-- div to manage the logos -->
           <div class="img-text-wrapper">
             <div class="logo-wrapper">
-              <img src="images/logos/logo2.png">
+              <img src="">
             </div>
 
             <!-- logo subtiltes -->
             <div class="subtitle">
               <p>Front-end Web Development with HTML, CSS and more</p>
-              <a href="" target="_blank" rel="noopener noreferrer">
-                <button class="fallout">follow</button>
+              <a href="contact.html" target="_self" rel="noopener noreferrer">
+                <button class="fallout">contact me</button>
               </a>
             </div>
           </div>
@@ -92,7 +101,7 @@
             <div class="subtitle">
               <p>Listen to Kenya's upcoming female Gospel Artist</p>
               <a href="https://www.youtube.com/channel/UCukI2b6DriXJr5_qsQLAR1g/featured" target="_blank" rel="noopener noreferrer">
-                <button class="fallout">follow</button>
+                <button class="fallout">listen</button>
               </a>
             </div>
           </div>
@@ -129,12 +138,12 @@
           <!-- div to manage the logos -->
           <div class="img-text-wrapper">
             <div class="logo-wrapper">
-              <img src="images/logos/logo5.png">
+              <img src="">
             </div>
 
             <!-- logo subtiltes -->
             <div class="subtitle">
-              <p>Join the travel</p>
+              <p>Be part of the greatest Soul Bonding music. Join the Guitar Team</p>
               <a href="https://metickets.krc.co.ke/" target="_blank" rel="noopener noreferrer">
                 <button class="fallout">follow</button>
               </a>
@@ -156,8 +165,9 @@
 
             <!-- logo subtiltes -->
             <div class="subtitle">
+              <p>Join the Growth & Development. Be part of the <b>idea</b> movement</p>
               <a href="" target="_blank" rel="noopener noreferrer">
-              <button class="fallout">follow</button>
+              <button class="fallout">join</button>
               </a>
             </div>
           </div>
@@ -177,7 +187,8 @@
 
             <!-- logo subtiltes -->
             <div class="subtitle">
-              <a href="" target="_blank" rel="noopener noreferrer">
+              <p>Don't be left out, enjoy the thrill of learning something new everyday</p>
+              <a href="https://kalaxcyberworld.netlify.app/" target="_blank" rel="noopener noreferrer">
                 <button class="fallout">follow</button>
               </a>
             </div>
@@ -198,7 +209,8 @@
 
             <!-- logo subtiltes -->
             <div class="subtitle">
-              <a href="" target="_blank" rel="noopener noreferrer">
+              <p>Enjoy the lucarative flow of knowledge as you embark on a new path of infinite wisdom</p>
+              <a href="https://www.ttu.ac.ke/" target="_blank" rel="noopener noreferrer">
                 <button class="fallout">follow</button>
               </a>
             </div>
@@ -241,8 +253,9 @@
 
             <!-- logo subtiltes -->
             <div class="subtitle">
+              <p>Had a long long stress filled day. Take time to relax and enjoy the scenary</p>
               <a href="" target="_blank" rel="noopener noreferrer">
-                <button class="fallout">follow</button>
+                <button class="fallout">relax</button>
               </a>
             </div>
           </div>
@@ -262,7 +275,9 @@
 
             <!-- logo subtiltes -->
             <div class="subtitle">
-              <button class="fallout">follow</button>
+              <a href="" target="_blank" rel="noopener noreferre">
+                <button class="fallout">follow</button>
+              </a>
             </div>
           </div>
 
@@ -280,7 +295,10 @@
 
             <!-- logo subtiltes -->
             <div class="subtitle">
-              <button class="fallout">follow</button>
+              <p>Travel the world in style and see wonders that will blow your mind. Join the Adventure.</p>
+              <a href="https://www.voiadventures.com/" target="_blank" rel="noopener noreferrer">
+                <button class="fallout">register</button>
+              </a>
             </div>
           </div>
 
@@ -290,20 +308,19 @@
     </div>
 
   </div>
+  <script type="text/javascript">
+    const itemNames = document.querySelectorAll('.item-wrapper')
+  
+    // adding an event listener
+    itemNames.forEach(itemName => {
+      itemName.addEventListener('mouseover', () => {
+        itemName.childNodes[1].classList.add('img-darken');
+      })
+      
+      itemName.addEventListener('mouseout', () => {
+        itemName.childNodes[1].classList.remove('img-darken');
+      })
+    })
+  </script>
 </body>
-
-<script>
-  const itemNames = document.querySelectorAll('.item-wrapper')
-
-  // adding an event listener
-  itemNames.forEach(itemName => {
-    itemName.addEventListener('mouseover', () => {
-      itemName.childNodes[1].classList.add('img-darken');
-    })
-    
-    itemName.addEventListener('mouseout', () => {
-      itemName.childNodes[1].classList.remove('img-darken');
-    })
-  })
-</script>
 </html>

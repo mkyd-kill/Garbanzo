@@ -2,7 +2,7 @@
 body {
     font-family: monospace, 'Times New Roman', Times, serif;
     margin: 0%;
-    background-color: darkslategrey;
+    background-color: antiquewhite;
 }
 
 .container {
@@ -188,7 +188,7 @@ body {
 }
 
 /* For mobile phones and screen transitions */
-@media only screen and (max-width: 815px) {
+@media only screen and (max-width: 800px) {
     /* For mobile phones: */
     body {
         height: auto;
@@ -229,8 +229,7 @@ body {
         margin-bottom: 80px;
         margin-left: 20px;
     }
-    
-    /* Need to be more specific with selector */
+
     .img-text-wrapper:hover .subtitle {
         font-weight: 650;
         font-size: medium;
@@ -247,6 +246,4 @@ body {
         text-decoration: none;
     }
   }
-
-  @media only screen and (max-width: 400px) {
-  }
+/* Add its compatibility and transition to min-width:300px screens */
