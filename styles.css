@@ -161,7 +161,7 @@ body {
     color: red !important;
     background-color: black;
     bottom: 0%;
-    border-color: whitesmoke;
+    border-color: darkblue;
 }
 
 .img-text-wrapper .subtitle .fallout {
@@ -177,24 +177,6 @@ body {
     filter: brightness(15%);
 }
 
-/* About page */
-.two-column-wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
-.profile-img-wrapper img {
-    width: 100%;
-}
-
-.profile-content-wrapper {
-    padding: 30px;
-}
-
-.profile-content-wrapper h1 {
-    color: lightseagreen;
-}
-
 /* For mobile phones and screen transitions */
 @media only screen and (max-width: 800px) {
     /* For mobile phones: */
@@ -202,6 +184,7 @@ body {
         height: auto;
         width: auto;
     }
+
     .container{
         display: grid;
         grid-template-columns: 1fr;
@@ -302,7 +285,7 @@ body {
         color: transparent;
         bottom: 0%;
         text-decoration: none;
-        filter: brightness(100%);
+        filter: brightness(50%);
         border-radius: .5in;
     }
 
@@ -317,19 +300,157 @@ body {
         color: red !important;
         background-color: black;
         bottom: 0%;
-        border-color: whitesmoke;
+        border-color: darkblue;
     }
 
     .img-text-wrapper .subtitle .fallout {
         transition: 1s;
-        font-weight: 6000;
+        font-weight: 600;
         bottom: 0%;
         text-decoration: none;
-        filter: brightness(100%);
+        filter: brightness(50%);
     }
 
     .img-darken {
         transition: 2s;
-        filter: brightness(30%);
+        filter: brightness(20%);
+    }
+}
+@media only screen and (max-width: 500px) {
+    body {
+        height: auto;
+        width: auto;
+    }
+
+    .container{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .info {
+        visibility: visible;
+        background-color: cadetblue !important;
+        font-size: .8em;
+        width: 100%;
+    }
+
+    #nav-bar {
+        border-radius: 0px 0px 5px 5px;
+    }
+
+    #nav-bar > .left-side > div {
+        margin-right: 15px;
+        font-size: .8em;
+        text-transform: uppercase;
+        word-spacing: .5in;
+    }
+
+    .brand {
+        font-family: 'Courier New', Courier, monospace;
+        font-size: .8em;
+        font-weight: bold;
+        color: darkblue;
+    }
+
+    /* Web styles */
+    .items-wrapper {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: .06in;
+    }
+
+    .item-wrapper {
+        position: relative;
+    }
+
+    .img-background {
+        height: 250px;
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat !important;
+        border-spacing: .4in;
+        border-radius: 15px;
+    }
+
+    .img-text-wrapper {
+        position: absolute;
+        top: 0%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center !important;
+        height: 100%;
+        text-align: center;
+        padding: 0 50px 0 50px;
+    }
+
+    .logo-wrapper img {
+        align-content: center !important;
+        width: 20%;
+        margin-bottom: 40px;
+        margin-left: 10px;
+    }
+
+    /* Need to be more specific with selector */
+    .img-text-wrapper:hover .subtitle {
+        font-weight: 400;
+        font-size: medium;
+        font-family: monospace, 'Times New Roman', Times, serif;
+        color: aqua;
+        bottom: 0%;
+    }
+
+    .img-text-wrapper .subtitle {
+        transition: 2s;
+        font-weight: 400;
+        color: transparent;
+        bottom: 0%;
+        text-decoration: none;
+    }
+
+    .img-text-wrapper:hover .subtitle .fallout{
+        font-weight: 400;
+        font-size: medium;
+        font-family: monospace, 'Times New Roman', Times, serif;
+        color: white;
+        bottom: 0%;
+    }
+
+    .img-text-wrapper .subtitle .fallout{
+        transition: 1s;
+        font-weight: 400;
+        color: transparent;
+        bottom: 0%;
+        text-decoration: none;
+        filter: brightness(50%);
+        border-radius: .5in;
+    }
+
+    .fallout {
+        color: white;
+        background-color: transparent;
+        border: none;
+    }
+
+    .fallout:hover {
+        transition: 1s;
+        color: red !important;
+        background-color: black;
+        bottom: 0%;
+        border-color: darkblue;
+    }
+
+    .img-text-wrapper .subtitle .fallout {
+        transition: 1s;
+        font-weight: 400;
+        bottom: 0%;
+        text-decoration: none;
+        filter: brightness(50%);
+    }
+
+    .img-darken {
+        transition: 2s;
+        filter: brightness(25%);
     }
 }
